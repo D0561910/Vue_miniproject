@@ -1,28 +1,36 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <VueWeather />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import VueWeather from "./components/VueWeather.vue";
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    VueWeather,
+  },
+};
 </script>
 
-<style>
+<style lang="scss">
+@import url("https://fonts.googleapis.com/css?family=Anton");
+@import url("https://use.fontawesome.com/releases/v5.8.2/css/all.css");
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-family: "Anton", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: #322f42;
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  overflow: hidden;
 }
 </style>
